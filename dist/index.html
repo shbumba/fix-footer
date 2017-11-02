@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <title>Fix Footer</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="head">
+    Head...
+</div>
+<div class="content">
+    Content...
+</div>
+<div class="footer">
+    Footer...
+    <br/>
+    Footer...
+</div>
+
+<script type="text/javascript" src="fix-footer.min.js"></script>
+<script type="text/javascript">
+    (function (d, w) {
+        'use strict';
+
+        let fix = new FixFooter({
+            pageClass: 'body',
+            spacedClass: '.content'
+        });
+
+        w.addEventListener('resize', fix.space);
+    })(document, window);
+</script>
+</body>
+</html>

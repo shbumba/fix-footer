@@ -1,0 +1,27 @@
+{
+  "name": "fix-footer",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "author": "Vitaly Fomin <vitaly63fomin@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "server": "webpack-dev-server --env dev",
+    "watch": "webpack --config webpack.config.js --watch --env dev",
+    "build:dev": "webpack --config webpack.config.js --env dev",
+    "build:prod": "webpack --config webpack.config.js --env prod"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.1",
+    "extract-loader": "^1.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "uglifyjs-webpack-plugin": "^1.0.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3",
+    "webpack-merge": "^4.1.0"
+  }
+}
